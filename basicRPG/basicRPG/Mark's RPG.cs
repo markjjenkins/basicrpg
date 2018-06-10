@@ -455,5 +455,6 @@ namespace basicRPG
             UpdateInventoryListInUI();
             UpdatePotionListInUI();
         }
+
     }
 }
