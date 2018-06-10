@@ -1,0 +1,8 @@
+C:\Users\Sally\source\repos\basicRPG\Engine\bin\Debug\netstandard1.4\Engine.deps.json
+C:\Users\Sally\source\repos\basicRPG\Engine\bin\Debug\netstandard1.4\Engine.dll
+C:\Users\Sally\source\repos\basicRPG\Engine\bin\Debug\netstandard1.4\Engine.pdb
+C:\Users\Sally\source\repos\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.csprojResolveAssemblyReference.cache
+C:\Users\Sally\source\repos\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.csproj.CoreCompileInputs.cache
+C:\Users\Sally\source\repos\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.AssemblyInfo.cs
+C:\Users\Sally\source\repos\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.dll
+C:\Users\Sally\source\repos\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.pdb

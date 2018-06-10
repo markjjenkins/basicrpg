@@ -1,0 +1,12 @@
+C:\Users\Sally\source\repos\basicRPG\basicRPG\bin\Debug\basicRPG.exe.config
+C:\Users\Sally\source\repos\basicRPG\basicRPG\bin\Debug\basicRPG.exe
+C:\Users\Sally\source\repos\basicRPG\basicRPG\bin\Debug\basicRPG.pdb
+C:\Users\Sally\source\repos\basicRPG\basicRPG\bin\Debug\Engine.dll
+C:\Users\Sally\source\repos\basicRPG\basicRPG\bin\Debug\Engine.pdb
+C:\Users\Sally\source\repos\basicRPG\basicRPG\obj\Debug\basicRPG.csprojResolveAssemblyReference.cache
+C:\Users\Sally\source\repos\basicRPG\basicRPG\obj\Debug\basicRPG.basicRPG.resources
+C:\Users\Sally\source\repos\basicRPG\basicRPG\obj\Debug\basicRPG.Properties.Resources.resources
+C:\Users\Sally\source\repos\basicRPG\basicRPG\obj\Debug\basicRPG.csproj.GenerateResource.Cache
+C:\Users\Sally\source\repos\basicRPG\basicRPG\obj\Debug\basicRPG.csproj.CoreCompileInputs.cache
+C:\Users\Sally\source\repos\basicRPG\basicRPG\obj\Debug\basicRPG.exe
+C:\Users\Sally\source\repos\basicRPG\basicRPG\obj\Debug\basicRPG.pdb
