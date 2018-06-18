@@ -463,5 +463,39 @@ namespace basicRPG
             UpdatePotionListInUI();
         }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnShowQuests_Click(object sender, EventArgs e)
+        {
+
+            if (dgvQuests.Visible == false)
+            {
+                dgvQuests.Visible = true;
+            }
+            else
+            {
+                dgvQuests.Visible = false;
+            }
+        }
+
+        private void btnShowInventory_Click(object sender, EventArgs e)
+        {
+
+
+            if (dgvInventory.Visible == false)
+            {
+                dgvInventory.Visible = true;
+            }
+            else
+            {
+                dgvInventory.Visible = false;
+            }
+
+        }
+
+        
     }
 }
