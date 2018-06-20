@@ -22,13 +22,19 @@ namespace basicRPG
             InitializeComponent();
 
             _player = new Player(10, 10, 20, 0, 1);
-            MoveTo(World.LocationByID(World.LOCATION_ID_HOME));
-            _player.Inventory.Add(new InventoryItem(World.ItemByID(World.ITEM_ID_RUSTY_SWORD), 1));
+            MoveTo(World.LocationByID(World.LOCATION_ID_CATHEDRAL));
+            _player.Inventory.Add(new InventoryItem(World.ItemByID(World.ITEM_ID_STAFF), 1));
+
+            rtbMessages.Text += "The apocalypse has come. Things aren't looking good; the undead have surrounded the town, and reports have come in that the Four Horsemen of the Apocalypse have come to make sure the job is done. It's just a matter of time before everything is finished." + Environment.NewLine;
+            rtbMessages.Text += Environment.NewLine;
+            rtbMessages.Text += "A lowly cleric from the local church, you decide to be proactive about the situation. Civilians are vacating the place quickly - as if that'd do anything - and the clergymen are just sitting there, accepting their fates. But not you. You go out into the world with a staff and a determination to defeat the problem at it's roots..." + Environment.NewLine;
+            rtbMessages.Text += Environment.NewLine;
 
             lblHealth.Text = _player.CurrentHealth.ToString();
             lblGold.Text = _player.Gold.ToString();
             lblExperience.Text = _player.ExperiencePoints.ToString();
             lblLevel.Text = _player.Level.ToString();
+
         }
 
         private void btnNorth_Click(object sender, EventArgs e)
@@ -56,7 +62,7 @@ namespace basicRPG
             //Does the location have any required items
             if (!_player.HasRequiredItemToEnterThisLocation(newLocation))
             {
-                rtbMessages.Text += "You must have a " + newLocation.ItemRequiredToEnter.Name + " to enter this location." + Environment.NewLine;
+                rtbMessages.Text += "You must have " + newLocation.ItemRequiredToEnter.Name + " to enter this location." + Environment.NewLine;
                 return;
             }
 
@@ -396,9 +402,10 @@ namespace basicRPG
                 {
                     // Display message
                     rtbMessages.Text += "The " + _currentMonster.Name + " killed you." + Environment.NewLine;
+                    rtbMessages.Text += "You're teleported back to the cathedral; a divine force has given you another chance." + Environment.NewLine;
 
                     // Move player to "Home"
-                    MoveTo(World.LocationByID(World.LOCATION_ID_HOME));
+                    MoveTo(World.LocationByID(World.LOCATION_ID_CATHEDRAL));
                 }
             }
         }
@@ -447,7 +454,7 @@ namespace basicRPG
                 rtbMessages.Text += "The " + _currentMonster.Name + " killed you." + Environment.NewLine;
 
                 // Move player to "Home"
-                MoveTo(World.LocationByID(World.LOCATION_ID_HOME));
+                MoveTo(World.LocationByID(World.LOCATION_ID_CATHEDRAL));
             }
 
             // Refresh player data in UI
@@ -456,5 +463,39 @@ namespace basicRPG
             UpdatePotionListInUI();
         }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnShowQuests_Click(object sender, EventArgs e)
+        {
+
+            if (dgvQuests.Visible == false)
+            {
+                dgvQuests.Visible = true;
+            }
+            else
+            {
+                dgvQuests.Visible = false;
+            }
+        }
+
+        private void btnShowInventory_Click(object sender, EventArgs e)
+        {
+
+
+            if (dgvInventory.Visible == false)
+            {
+                dgvInventory.Visible = true;
+            }
+            else
+            {
+                dgvInventory.Visible = false;
+            }
+
+        }
+
+        
     }
 }

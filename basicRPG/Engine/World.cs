@@ -11,33 +11,32 @@ namespace Engine
         public static readonly List<Quest> Quests = new List<Quest>();
         public static readonly List<Location> Locations = new List<Location>();
 
-        public const int ITEM_ID_RUSTY_SWORD = 1;
-        public const int ITEM_ID_RAT_TAIL = 2;
-        public const int ITEM_ID_PIECE_OF_FUR = 3;
-        public const int ITEM_ID_SNAKE_FANG = 4;
-        public const int ITEM_ID_SNAKESKIN = 5;
-        public const int ITEM_ID_CLUB = 6;
+        public const int ITEM_ID_STAFF = 1;
+        public const int ITEM_ID_ZOMBIE_FLESH = 2;
+        public const int ITEM_ID_SKULL = 3;
+        public const int ITEM_ID_ROTTEN_PIECE_CLOTH = 4;
+        public const int ITEM_ID_CONGEALED_BLOOD = 5;
+        public const int ITEM_ID_MACE = 6;
         public const int ITEM_ID_HEALING_POTION = 7;
-        public const int ITEM_ID_SPIDER_FANG = 8;
-        public const int ITEM_ID_SPIDER_SILK = 9;
-        public const int ITEM_ID_ADVENTURER_PASS = 10;
+        public const int ITEM_ID_DIVINE_DISTURBANCE = 8;
+        public const int ITEM_ID_ACCESS = 9;
 
-        public const int MONSTER_ID_RAT = 1;
-        public const int MONSTER_ID_SNAKE = 2;
-        public const int MONSTER_ID_GIANT_SPIDER = 3;
+        public const int MONSTER_ID_ZOMBIE = 1;
+        public const int MONSTER_ID_GHOUL = 2;
+        public const int MONSTER_ID_FOUR_HORSEMEN = 3;
 
-        public const int QUEST_ID_CLEAR_ALCHEMIST_GARDEN = 1;
-        public const int QUEST_ID_CLEAR_FARMERS_FIELD = 2;
+        public const int QUEST_ID_CLEAR_NORTHERN_OUTSKIRTS = 1;
+        public const int QUEST_ID_WESTERN_WAR = 2;
 
-        public const int LOCATION_ID_HOME = 1;
+        public const int LOCATION_ID_CATHEDRAL = 1;
         public const int LOCATION_ID_TOWN_SQUARE = 2;
         public const int LOCATION_ID_GUARD_POST = 3;
         public const int LOCATION_ID_ALCHEMIST_HUT = 4;
-        public const int LOCATION_ID_ALCHEMISTS_GARDEN = 5;
-        public const int LOCATION_ID_FARMHOUSE = 6;
-        public const int LOCATION_ID_FARM_FIELD = 7;
-        public const int LOCATION_ID_BRIDGE = 8;
-        public const int LOCATION_ID_SPIDER_FIELD = 9;
+        public const int LOCATION_ID_NORTHERN_OUTSKIRTS = 5;
+        public const int LOCATION_ID_CASTLE = 6;
+        public const int LOCATION_ID_FORTIFICATIONS = 7;
+        public const int LOCATION_ID_EASTERN_LINE = 8;
+        public const int LOCATION_ID_PLAINS = 9;
 
         static World()
         {
@@ -50,136 +49,144 @@ namespace Engine
 
         private static void PopulateItems()
         {
-            Items.Add(new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5));
-            Items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat tail", "Rat tails"));
-            Items.Add(new Item(ITEM_ID_PIECE_OF_FUR, "Piece of fur", "Pieces of fur"));
-            Items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake fang", "Snake fangs"));
-            Items.Add(new Item(ITEM_ID_SNAKESKIN, "Snakeskin", "Snakeskins"));
-            Items.Add(new Weapon(ITEM_ID_CLUB, "Club", "Clubs", 3, 10));
-            Items.Add(new HealingPotion(ITEM_ID_HEALING_POTION,
-            "Healing potion", "Healing potions", 5));
-            Items.Add(new Item(ITEM_ID_SPIDER_FANG, "Spider fang", "Spider fangs"));
-            Items.Add(new Item(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks"));
-            Items.Add(new Item(ITEM_ID_ADVENTURER_PASS,
-            "Adventurer pass", "Adventurer passes"));
+            Items.Add(new Weapon(ITEM_ID_STAFF, "Staff", "Staves", 0, 5));
+            Items.Add(new Item(ITEM_ID_ZOMBIE_FLESH, "Zombie flesh", "Zombie flesh"));
+            Items.Add(new Item(ITEM_ID_SKULL, "Skull", "Skulls"));
+            Items.Add(new Item(ITEM_ID_ROTTEN_PIECE_CLOTH, "Rotten piece of cloth", "Rotten pieces of cloth"));
+            Items.Add(new Item(ITEM_ID_CONGEALED_BLOOD, "Congealed blood", "Congealed blood"));
+            Items.Add(new Weapon(ITEM_ID_MACE, "Mace", "Maces", 3, 10));
+            Items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 5));
+            Items.Add(new Item(ITEM_ID_DIVINE_DISTURBANCE, "Congealed blood", "Congealed blood"));
+            Items.Add(new Item(ITEM_ID_ACCESS, "Access", "Access"));
         }
 
         private static void PopulateMonsters()
         {
-            Monster rat = new Monster(MONSTER_ID_RAT, "Rat", 5, 3, 10, 3, 3);
-            rat.LootTable.Add(new LootItem(ItemByID(ITEM_ID_RAT_TAIL), 75, false));
-            rat.LootTable.Add(new LootItem(ItemByID(ITEM_ID_PIECE_OF_FUR), 75, true));
+            Monster zombie = new Monster(MONSTER_ID_ZOMBIE, "Zombie", 5, 3, 10, 3, 3);
+            zombie.LootTable.Add(new LootItem(ItemByID(ITEM_ID_ZOMBIE_FLESH), 75, false));
+            zombie.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SKULL), 75, true));
 
-            Monster snake = new Monster(MONSTER_ID_SNAKE, "Snake", 5, 3, 10, 3, 3);
-            snake.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SNAKE_FANG), 75, false));
-            snake.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SNAKESKIN), 75, true));
+            Monster ghoul = new Monster(MONSTER_ID_GHOUL, "Ghoul", 5, 3, 10, 3, 3);
+            ghoul.LootTable.Add(new LootItem(ItemByID(ITEM_ID_ROTTEN_PIECE_CLOTH), 75, false));
+            ghoul.LootTable.Add(new LootItem(ItemByID(ITEM_ID_CONGEALED_BLOOD), 75, true));
 
-            Monster giantSpider = new Monster(MONSTER_ID_GIANT_SPIDER,
-            "Giant spider", 20, 5, 40, 10, 10);
-            giantSpider.LootTable.Add(new LootItem(
-            ItemByID(ITEM_ID_SPIDER_FANG), 75, true));
-            giantSpider.LootTable.Add(new LootItem(
-            ItemByID(ITEM_ID_SPIDER_SILK), 25, false));
+            Monster fourHorsemen = new Monster(MONSTER_ID_FOUR_HORSEMEN, "Horseman", 20, 5, 40, 10, 10);
+            fourHorsemen.LootTable.Add(new LootItem(
+            ItemByID(ITEM_ID_MACE), 75, true));
+            fourHorsemen.LootTable.Add(new LootItem(
+            ItemByID(ITEM_ID_DIVINE_DISTURBANCE), 25, false));
 
-            Monsters.Add(rat);
-            Monsters.Add(snake);
-            Monsters.Add(giantSpider);
+            Monsters.Add(zombie);
+            Monsters.Add(ghoul);
+            Monsters.Add(fourHorsemen);
         }
 
 
         private static void PopulateQuests()
         {
-            Quest clearAlchemistGarden = new Quest(QUEST_ID_CLEAR_ALCHEMIST_GARDEN,
-            "Clear the alchemist's garden",
-            "Kill rats in the alchemist's garden and bring back 3 rat tails. You will receive a healing potion and 10 gold pieces", 20, 10);
+            Quest clearNorthernOutskirts = new Quest(QUEST_ID_CLEAR_NORTHERN_OUTSKIRTS,
+            "Clear the northern outskirts" +
+            "",
+            "Kill zombies in the northern outskirts of town and bring back 3 pieces of zombie flesh. You will receive a healing potion and 10 gold", 20, 10);
 
-            clearAlchemistGarden.QuestCompletionItems.Add(new QuestCompletionItem(
-            ItemByID(ITEM_ID_RAT_TAIL), 3));
+            clearNorthernOutskirts.QuestCompletionItems.Add(new QuestCompletionItem(
+            ItemByID(ITEM_ID_ZOMBIE_FLESH), 3));
 
-            clearAlchemistGarden.RewardItem = ItemByID(ITEM_ID_HEALING_POTION);
+            clearNorthernOutskirts.RewardItem = ItemByID(ITEM_ID_HEALING_POTION);
+            
+            
 
-            Quest clearFarmersField = new Quest(QUEST_ID_CLEAR_FARMERS_FIELD,
-            "Clear the farmer's field",
-            "Kill snakes in the farmer's field and bring back 3 snake fangs. You will receive an adventurer's pass and 20 gold pieces.", 20, 20);
+            Quest westernWar = new Quest(QUEST_ID_WESTERN_WAR,
+            "Western war" +
+            "",
+            "Kill ghouls on the western fortifications of the castle and bring back 3 rotten pieces of cloth to prove your contribution to the war effort. You will receive 20 gold pieces, and access to the eastern plains where the Four Horsemen are rapidly approaching", 20, 20);
 
-            clearFarmersField.QuestCompletionItems.Add(new QuestCompletionItem(
-            ItemByID(ITEM_ID_SNAKE_FANG), 3));
+            westernWar.QuestCompletionItems.Add(new QuestCompletionItem(
+            ItemByID(ITEM_ID_ROTTEN_PIECE_CLOTH), 3));
 
-            clearFarmersField.RewardItem = ItemByID(ITEM_ID_ADVENTURER_PASS);
+            westernWar.RewardItem = ItemByID(ITEM_ID_ACCESS);
+           
 
-            Quests.Add(clearAlchemistGarden);
-            Quests.Add(clearFarmersField);
+            Quests.Add(clearNorthernOutskirts);
+            Quests.Add(westernWar);
         }
 
         private static void PopulateLocations()
         {
             // Create each location
-            Location home = new Location(LOCATION_ID_HOME, "Home",
-            "Your house. You really need to clean up the place.");
+            Location cathedral = new Location(LOCATION_ID_CATHEDRAL, "Cathedral" +
+                "",
+            "Your base of operations. The only place of serenity in a radius of 10 miles. The clergy are content with their imminent passing.");
 
             Location townSquare = new Location(LOCATION_ID_TOWN_SQUARE,
-            "Town square", "You see a fountain.");
+            "Town square" +
+            "", "Panic is setting in as people are desperately trying to evacuate before disaster strikes.");
 
             Location alchemistHut = new Location(LOCATION_ID_ALCHEMIST_HUT,
-            "Alchemist's hut", "There are many strange plants on the shelves.");
-            alchemistHut.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_ALCHEMIST_GARDEN);
+            "Alchemist's hut" +
+            "", "An elderly man is frantically flipping through books and filing through shelfs of miscellaneous ingredients, trying to find some sort of solution to the impending problem at hand: you don't know whether he's attempting to create a god-killing elixir, or an quick and painless poison to kill himself with.");
+            alchemistHut.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_NORTHERN_OUTSKIRTS);
 
-            Location alchemistsGarden = new Location(LOCATION_ID_ALCHEMISTS_GARDEN,
-            "Alchemist's garden", "Many plants are growing here.");
-            alchemistsGarden.MonsterLivingHere = MonsterByID(MONSTER_ID_RAT);
+            Location northernOutskirts = new Location(LOCATION_ID_NORTHERN_OUTSKIRTS,
+            "Northern outskirts", "Zombies meander about; people have already left their homes by now. The undead's only sense of a compass is the faint scent of human flesh and desperation.");
+            northernOutskirts.MonsterLivingHere = MonsterByID(MONSTER_ID_ZOMBIE);
 
-            Location farmhouse = new Location(LOCATION_ID_FARMHOUSE,
-            "Farmhouse", "There is a small farmhouse, with a farmer in front.");
-            farmhouse.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_FARMERS_FIELD);
+            Location castle = new Location(LOCATION_ID_CASTLE,
+            "Castle" +
+            "", "The king is visibly distressed, sitting in his throne room with a furrowed brow and an intense expression of thought; conjuring up an scenario in his mind where he and his subjects can be annihilated honourably.");
+            castle.QuestAvailableHere = QuestByID(QUEST_ID_WESTERN_WAR);
 
-            Location farmersField = new Location(LOCATION_ID_FARM_FIELD,
-            "Farmer's field", "You see rows of vegetables growing here.");
-            farmersField.MonsterLivingHere = MonsterByID(MONSTER_ID_SNAKE);
+            Location fortifications = new Location(LOCATION_ID_FORTIFICATIONS,
+            "Western fortifications" +
+            "", "A formation of knights fend off a horde of ghouls attempting to breach the western walls.");
+            fortifications.MonsterLivingHere = MonsterByID(MONSTER_ID_GHOUL);
 
             Location guardPost = new Location(LOCATION_ID_GUARD_POST,
-            "Guard post", "There is a large, tough-looking guard here.",
-            ItemByID(ITEM_ID_ADVENTURER_PASS));
-            Location bridge = new Location(LOCATION_ID_BRIDGE, "Bridge", "A stone bridge crosses a wide river.");
+            "Guard post" +
+            "", "A timid scout is perched up high on a post. He knows he is near death, and can see the culprits heading towards him at blistering speeds.",
+            ItemByID(ITEM_ID_ACCESS));
+            Location easternLine = new Location(LOCATION_ID_EASTERN_LINE, "Eastern line", "A line of the most seasoned veterans - the elite few - guard the eastern front. They are ready to die with honour.");
 
-            Location spiderField = new Location(LOCATION_ID_SPIDER_FIELD,
-             "Forest", "You see spider webs covering covering the trees in this forest.");
-            spiderField.MonsterLivingHere = MonsterByID(MONSTER_ID_GIANT_SPIDER);
+            Location plains = new Location(LOCATION_ID_PLAINS,
+             "Plains" +
+             "", "4 beings approach....! ");
+            plains.MonsterLivingHere = MonsterByID(MONSTER_ID_FOUR_HORSEMEN);
 
             // Link the locations together
-            home.LocationToNorth = townSquare;
+            cathedral.LocationToNorth = townSquare;
 
             townSquare.LocationToNorth = alchemistHut;
-            townSquare.LocationToSouth = home;
-            townSquare.LocationToEast = guardPost;
-            townSquare.LocationToWest = farmhouse;
+            townSquare.LocationToSouth = cathedral;
+            townSquare.LocationToEast = easternLine;
+            townSquare.LocationToWest = castle;
 
-            farmhouse.LocationToEast = townSquare;
-            farmhouse.LocationToWest = farmersField;
+            castle.LocationToEast = townSquare;
+            castle.LocationToWest = fortifications;
 
-            farmersField.LocationToEast = farmhouse;
+            fortifications.LocationToEast = castle;
 
             alchemistHut.LocationToSouth = townSquare;
-            alchemistHut.LocationToNorth = alchemistsGarden;
+            alchemistHut.LocationToNorth = northernOutskirts;
 
-            alchemistsGarden.LocationToSouth = alchemistHut;
+            northernOutskirts.LocationToSouth = alchemistHut;
 
-            guardPost.LocationToEast = bridge;
-            guardPost.LocationToWest = townSquare;
-            bridge.LocationToWest = guardPost;
-            bridge.LocationToEast = spiderField;
+            guardPost.LocationToEast = plains;
+            guardPost.LocationToWest = easternLine;
+            easternLine.LocationToWest = townSquare;
+            easternLine.LocationToEast = guardPost;
 
-            spiderField.LocationToWest = bridge;
+            plains.LocationToWest = guardPost;
 
             // Add the locations to the static list
-            Locations.Add(home);
+            Locations.Add(cathedral);
             Locations.Add(townSquare);
             Locations.Add(guardPost);
             Locations.Add(alchemistHut);
-            Locations.Add(alchemistsGarden);
-            Locations.Add(farmhouse);
-            Locations.Add(farmersField);
-            Locations.Add(bridge);
-            Locations.Add(spiderField);
+            Locations.Add(northernOutskirts);
+            Locations.Add(castle);
+            Locations.Add(fortifications);
+            Locations.Add(easternLine);
+            Locations.Add(plains);
         }
 
         public static Item ItemByID(int id)
