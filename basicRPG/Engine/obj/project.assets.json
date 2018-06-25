@@ -3703,22 +3703,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sally\\.nuget\\packages\\": {}
+    "C:\\Users\\5mjenkin\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sally\\source\\repos\\basicRPG\\Engine\\Engine.csproj",
+      "projectUniqueName": "\\\\hbhs.local\\users\\Home\\Students\\5MJENKIN\\downloads\\basicrpg\\basicrpg-rename\\basicrpg-rename\\basicRPG\\Engine\\Engine.csproj",
       "projectName": "Engine",
-      "projectPath": "C:\\Users\\Sally\\source\\repos\\basicRPG\\Engine\\Engine.csproj",
-      "packagesPath": "C:\\Users\\Sally\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sally\\source\\repos\\basicRPG\\Engine\\obj\\",
+      "projectPath": "\\\\hbhs.local\\users\\Home\\Students\\5MJENKIN\\downloads\\basicrpg\\basicrpg-rename\\basicrpg-rename\\basicRPG\\Engine\\Engine.csproj",
+      "packagesPath": "C:\\Users\\5mjenkin\\.nuget\\packages\\",
+      "outputPath": "\\\\hbhs.local\\users\\Home\\Students\\5MJENKIN\\downloads\\basicrpg\\basicrpg-rename\\basicrpg-rename\\basicRPG\\Engine\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Sally\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\5mjenkin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3732,6 +3733,11 @@
         "netstandard1.4": {
           "projectReferences": {}
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
@@ -3739,7 +3745,7 @@
         "dependencies": {
           "NETStandard.Library": {
             "target": "Package",
-            "version": "1.6.1",
+            "version": "[1.6.1, )",
             "autoReferenced": true
           }
         }

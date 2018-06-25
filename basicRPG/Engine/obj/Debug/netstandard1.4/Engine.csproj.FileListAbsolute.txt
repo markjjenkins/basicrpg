@@ -6,3 +6,12 @@ C:\Users\Sally\source\repos\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.cspr
 C:\Users\Sally\source\repos\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.AssemblyInfo.cs
 C:\Users\Sally\source\repos\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.dll
 C:\Users\Sally\source\repos\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.pdb
+\\hbhs.local\users\Home\Students\5mjenkin\downloads\basicrpg\basicrpg-rename\basicrpg-rename\basicRPG\Engine\bin\Debug\netstandard1.4\Engine.deps.json
+\\hbhs.local\users\Home\Students\5mjenkin\downloads\basicrpg\basicrpg-rename\basicrpg-rename\basicRPG\Engine\bin\Debug\netstandard1.4\Engine.dll
+\\hbhs.local\users\Home\Students\5mjenkin\downloads\basicrpg\basicrpg-rename\basicrpg-rename\basicRPG\Engine\bin\Debug\netstandard1.4\Engine.pdb
+\\hbhs.local\users\Home\Students\5mjenkin\downloads\basicrpg\basicrpg-rename\basicrpg-rename\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.AssemblyInfo.cs
+\\hbhs.local\users\Home\Students\5mjenkin\downloads\basicrpg\basicrpg-rename\basicrpg-rename\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.dll
+\\hbhs.local\users\Home\Students\5mjenkin\downloads\basicrpg\basicrpg-rename\basicrpg-rename\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.pdb
+\\hbhs.local\users\Home\Students\5MJENKIN\downloads\basicrpg\basicrpg-rename\basicrpg-rename\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.csproj.CoreCompileInputs.cache
+\\hbhs.local\users\Home\Students\5MJENKIN\downloads\basicrpg\basicrpg-rename\basicrpg-rename\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.AssemblyInfoInputs.cache
+\\hbhs.local\users\Home\Students\5MJENKIN\downloads\basicrpg\basicrpg-rename\basicrpg-rename\basicRPG\Engine\obj\Debug\netstandard1.4\Engine.csprojAssemblyReference.cache

@@ -16,7 +16,7 @@ namespace basicRPG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new basicRPG());
+            Application.Run(new menu());
         }
     }
 }
