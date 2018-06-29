@@ -1,0 +1,7 @@
+C:\Users\Mark\Desktop\vbgv-master\Engine\bin\Release\netstandard1.4\Engine.deps.json
+C:\Users\Mark\Desktop\vbgv-master\Engine\bin\Release\netstandard1.4\Engine.dll
+C:\Users\Mark\Desktop\vbgv-master\Engine\bin\Release\netstandard1.4\Engine.pdb
+C:\Users\Mark\Desktop\vbgv-master\Engine\obj\Release\netstandard1.4\Engine.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\vbgv-master\Engine\obj\Release\netstandard1.4\Engine.AssemblyInfo.cs
+C:\Users\Mark\Desktop\vbgv-master\Engine\obj\Release\netstandard1.4\Engine.dll
+C:\Users\Mark\Desktop\vbgv-master\Engine\obj\Release\netstandard1.4\Engine.pdb
